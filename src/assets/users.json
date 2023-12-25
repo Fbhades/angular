@@ -1,0 +1,614 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "roua",
+      "password": "00000000",
+      "role": "candidat",
+      "formations": [
+        1,
+        5
+      ]
+    },
+    {
+      "id": 2,
+      "username": "firas",
+      "password": "123456789",
+      "role": "formateur",
+      "formations": [
+        1
+      ]
+    },
+    {
+      "id": 3,
+      "username": "montacer",
+      "password": "admin",
+      "role": "admin"
+    },
+    {
+      "username": "",
+      "password": "",
+      "role": "candidat",
+      "formations": [],
+      "id": 4
+    },
+    {
+      "username": "",
+      "password": "",
+      "role": "candidat",
+      "formations": [],
+      "id": 5
+    },
+    {
+      "username": "",
+      "password": "",
+      "role": "candidat",
+      "formations": [],
+      "id": 6
+    }
+  ],
+  "formations": [
+    {
+      "id": 1,
+      "title": "Formation Angular",
+      "description": "Formation complète sur Angular",
+      "charge_horaire": 30,
+      "programme": "Introduction à Angular, Components, Services, Routing, Forms, etc.",
+      "niveau_difficulte": "intermédiaire",
+      "tags": [
+        "Angular",
+        "JavaScript",
+        "Web Development"
+      ],
+      "categories": [
+        "Technology",
+        "Web Development"
+      ],
+      "price": "$49.99",
+      "image": "angular.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Formation Python",
+      "description": "Formation avancée sur Python",
+      "charge_horaire": 40,
+      "programme": "Fondamentaux de Python, OOP, Flask, Django, Data Science avec Python, etc.",
+      "niveau_difficulte": "avancé",
+      "tags": [
+        "Python",
+        "Programming",
+        "Data Science"
+      ],
+      "categories": [
+        "Technology",
+        "Programming"
+      ],
+      "price": "$59.99",
+      "image": "python.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Formation Marketing Digital",
+      "description": "Stratégies de marketing digital pour les entreprises",
+      "charge_horaire": 25,
+      "programme": "SEO, SEM, Réseaux sociaux, Email Marketing, Analytics, etc.",
+      "niveau_difficulte": "intermédiaire",
+      "tags": [
+        "Marketing",
+        "Digital Marketing",
+        "SEO"
+      ],
+      "categories": [
+        "Business",
+        "Marketing"
+      ],
+      "price": "$39.99",
+      "image": "marketing.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Formation Dessin Artistique",
+      "description": "Techniques avancées de dessin et d'illustration",
+      "charge_horaire": 35,
+      "programme": "Dessin au crayon, Digital Art, Illustration, Composition artistique, etc.",
+      "niveau_difficulte": "avancé",
+      "tags": [
+        "Art",
+        "Drawing",
+        "Digital Art"
+      ],
+      "categories": [
+        "Creative Arts",
+        "Visual Arts"
+      ],
+      "price": "$54.99",
+      "image": "drawing.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Formation Finance pour Entrepreneurs",
+      "description": "Comprendre les concepts financiers pour les entrepreneurs",
+      "charge_horaire": 20,
+      "programme": "Comptabilité, Analyse financière, Gestion de trésorerie, Investissements, etc.",
+      "niveau_difficulte": "débutant",
+      "tags": [
+        "Finance",
+        "Entrepreneurship",
+        "Business"
+      ],
+      "categories": [
+        "Business",
+        "Finance"
+      ],
+      "price": "$29.99",
+      "image": "finance.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Formation React",
+      "description": "Formation complète sur React",
+      "charge_horaire": 35,
+      "programme": "Introduction à React, Components, Hooks, Redux, Routing, etc.",
+      "niveau_difficulte": "intermédiaire",
+      "tags": [
+        "React",
+        "JavaScript",
+        "Web Development"
+      ],
+      "categories": [
+        "Technology",
+        "Web Development"
+      ],
+      "price": "$49.99",
+      "image": "react.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Formation Photographie",
+      "description": "Maîtrisez l'art de la photographie",
+      "charge_horaire": 30,
+      "programme": "Composition, Éclairage, Retouche photo, Prise de vue en studio et en extérieur, etc.",
+      "niveau_difficulte": "intermédiaire",
+      "tags": [
+        "Photography",
+        "Art",
+        "Visual Arts"
+      ],
+      "categories": [
+        "Creative Arts",
+        "Visual Arts"
+      ],
+      "price": "$44.99",
+      "image": "photography.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Formation Intelligence Artificielle",
+      "description": "Exploration approfondie de l'intelligence artificielle",
+      "charge_horaire": 40,
+      "programme": "Apprentissage automatique, Réseaux de neurones, Traitement du langage naturel, Projet IA, etc.",
+      "niveau_difficulte": "avancé",
+      "tags": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Data Science"
+      ],
+      "categories": [
+        "Technology",
+        "Data Science"
+      ],
+      "price": "$64.99",
+      "image": "ai.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Formation Yoga et Méditation",
+      "description": "Bien-être et équilibre à travers le yoga et la méditation",
+      "charge_horaire": 25,
+      "programme": "Asanas, Méditation guidée, Respiration consciente, Yoga nidra, etc.",
+      "niveau_difficulte": "débutant",
+      "tags": [
+        "Yoga",
+        "Meditation",
+        "Wellness"
+      ],
+      "categories": [
+        "Personal Development",
+        "Wellness"
+      ],
+      "price": "$34.99",
+      "image": "yoga.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Formation Cuisine Italienne",
+      "description": "Les secrets de la cuisine italienne authentique",
+      "charge_horaire": 20,
+      "programme": "Pâtes, Risotto, Antipasti, Desserts italiens, etc.",
+      "niveau_difficulte": "débutant",
+      "tags": [
+        "Cooking",
+        "Italian Cuisine",
+        "Food"
+      ],
+      "categories": [
+        "Creative Arts",
+        "Culinary Arts"
+      ],
+      "price": "$29.99",
+      "image": "italian_cuisine.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Formation Développement Personnel",
+      "description": "Développement personnel pour une vie épanouissante",
+      "charge_horaire": 30,
+      "programme": "Gestion du temps, Confiance en soi, Objectifs personnels, Communication, etc.",
+      "niveau_difficulte": "intermédiaire",
+      "tags": [
+        "Personal Development",
+        "Self Improvement",
+        "Mindfulness"
+      ],
+      "categories": [
+        "Personal Development",
+        "Wellness"
+      ],
+      "price": "$39.99",
+      "image": "personal_development.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Formation Design Graphique",
+      "description": "Conception graphique et création visuelle",
+      "charge_horaire": 35,
+      "programme": "Adobe Photoshop, Illustrator, Conception de logos, Design d'interface utilisateur, etc.",
+      "niveau_difficulte": "avancé",
+      "tags": [
+        "Design",
+        "Graphic Design",
+        "Creativity"
+      ],
+      "categories": [
+        "Creative Arts",
+        "Design"
+      ],
+      "price": "$54.99",
+      "image": "graphic_design.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Formation Musique Jazz",
+      "description": "Exploration du jazz à travers la théorie et la pratique",
+      "charge_horaire": 40,
+      "programme": "Théorie musicale, Improvisation, Histoire du jazz, Pratique d'instruments, etc.",
+      "niveau_difficulte": "avancé",
+      "tags": [
+        "Music",
+        "Jazz",
+        "Music Theory"
+      ],
+      "categories": [
+        "Creative Arts",
+        "Music"
+      ],
+      "price": "$59.99",
+      "image": "jazz_music.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Formation Éthique des Affaires",
+      "description": "Principes éthiques dans le monde des affaires",
+      "charge_horaire": 25,
+      "programme": "Responsabilité sociale des entreprises, Éthique professionnelle, Prise de décision éthique, etc.",
+      "niveau_difficulte": "intermédiaire",
+      "tags": [
+        "Business",
+        "Ethics",
+        "Corporate Social Responsibility"
+      ],
+      "categories": [
+        "Business",
+        "Ethics"
+      ],
+      "price": "$39.99",
+      "image": "business_ethics.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Formation Espagnol Intensif",
+      "description": "Apprenez l'espagnol de manière intensive",
+      "charge_horaire": 30,
+      "programme": "Grammaire, Vocabulaire, Conversations, Culture hispanique, etc.",
+      "niveau_difficulte": "débutant",
+      "tags": [
+        "Language",
+        "Spanish",
+        "Language Learning"
+      ],
+      "categories": [
+        "Personal Development",
+        "Language Learning"
+      ],
+      "price": "$44.99",
+      "image": "spanish.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Formation Développement Mobile avec Flutter",
+      "description": "Création d'applications mobiles multiplateformes avec Flutter",
+      "charge_horaire": 35,
+      "programme": "Introduction à Flutter, Widgets, Navigation, Gestion d'état, etc.",
+      "niveau_difficulte": "intermédiaire",
+      "tags": [
+        "Mobile Development",
+        "Flutter",
+        "Dart"
+      ],
+      "categories": [
+        "Technology",
+        "Mobile Development"
+      ],
+      "price": "$54.99",
+      "image": "flutter.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Formation Écologie et Durabilité",
+      "description": "Principes de l'écologie et actions pour la durabilité",
+      "charge_horaire": 20,
+      "programme": "Écosystèmes, Énergies renouvelables, Consommation responsable, Activisme environnemental, etc.",
+      "niveau_difficulte": "débutant",
+      "tags": [
+        "Environment",
+        "Sustainability",
+        "Ecology"
+      ],
+      "categories": [
+        "Personal Development",
+        "Environment"
+      ],
+      "price": "$29.99",
+      "image": "ecology.jpg"
+    },
+    {
+      "id": 18,
+      "title": "Formation Sketching et Croquis",
+      "description": "Techniques de dessin et de croquis pour tous niveaux",
+      "charge_horaire": 30,
+      "programme": "Esquisses rapides, Techniques de shading, Croquis de paysages, Portraits au crayon, etc.",
+      "niveau_difficulte": "intermédiaire",
+      "tags": [
+        "Art",
+        "Sketching",
+        "Drawing"
+      ],
+      "categories": [
+        "Creative Arts",
+        "Visual Arts"
+      ],
+      "price": "$44.99",
+      "image": "sketching.jpg"
+    },
+    {
+      "id": 19,
+      "title": "Formation Leadership Inspirant",
+      "description": "Développement du leadership inspirant et efficace",
+      "charge_horaire": 25,
+      "programme": "Vision stratégique, Communication inspirante, Gestion d'équipe, Prise de décision, etc.",
+      "niveau_difficulte": "intermédiaire",
+      "tags": [
+        "Leadership",
+        "Management",
+        "Personal Development"
+      ],
+      "categories": [
+        "Business",
+        "Personal Development"
+      ],
+      "price": "$39.99",
+      "image": "leadership.jpg"
+    },
+    {
+      "id": 20,
+      "title": "Formation Danse Moderne",
+      "description": "Apprentissage de la danse moderne et contemporaine",
+      "charge_horaire": 30,
+      "programme": "Techniques de danse moderne, Improvisation, Chorégraphie, Expression corporelle, etc.",
+      "niveau_difficulte": "intermédiaire",
+      "tags": [
+        "Dance",
+        "Modern Dance",
+        "Creativity"
+      ],
+      "categories": [
+        "Creative Arts",
+        "Performing Arts"
+      ],
+      "price": "$44.99",
+      "image": "modern_dance.jpg"
+    }
+  ],
+  "sessions": [
+    {
+      "id": 1,
+      "formation_id": 1,
+      "formateur": "John Doe",
+      "start_date": "2023-01-01",
+      "end_date": "2023-01-30",
+      "max_candidates": 15,
+      "registered_candidates": 15
+    },
+    {
+      "id": 2,
+      "formation_id": 2,
+      "formateur": "Jane Smith",
+      "start_date": "2023-02-01",
+      "end_date": "2023-02-28",
+      "max_candidates": 15,
+      "registered_candidates": 10
+    },
+    {
+      "id": 3,
+      "formation_id": 3,
+      "formateur": "Alice Johnson",
+      "start_date": "2023-03-01",
+      "end_date": "2023-03-31",
+      "max_candidates": 15,
+      "registered_candidates": 1
+    },
+    {
+      "id": 4,
+      "formation_id": 4,
+      "formateur": "Bob Wilson",
+      "start_date": "2023-04-01",
+      "end_date": "2023-04-30",
+      "max_candidates": 15,
+      "registered_candidates": 6
+    },
+    {
+      "id": 5,
+      "formation_id": 5,
+      "formateur": "Alice Johnson",
+      "start_date": "2023-03-01",
+      "end_date": "2023-03-31",
+      "max_candidates": 15,
+      "registered_candidates": 0
+    },
+    {
+      "id": 6,
+      "formation_id": 6,
+      "formateur": "Charlie Brown",
+      "start_date": "2023-05-01",
+      "end_date": "2023-05-31",
+      "max_candidates": 15,
+      "registered_candidates": 0
+    },
+    {
+      "id": 7,
+      "formation_id": 7,
+      "formateur": "Charlie Brown",
+      "start_date": "2023-05-01",
+      "end_date": "2023-05-31",
+      "max_candidates": 15,
+      "registered_candidates": 1
+    },
+    {
+      "id": 8,
+      "formation_id": 8,
+      "formateur": "David Johnson",
+      "start_date": "2023-06-01",
+      "end_date": "2023-06-30",
+      "max_candidates": 15,
+      "registered_candidates": 0
+    },
+    {
+      "id": 9,
+      "formation_id": 9,
+      "formateur": "David Johnson",
+      "start_date": "2023-06-01",
+      "end_date": "2023-06-30",
+      "max_candidates": 15,
+      "registered_candidates": 0
+    },
+    {
+      "id": 10,
+      "formation_id": 10,
+      "formateur": "Eva Davis",
+      "start_date": "2023-07-01",
+      "end_date": "2023-07-31",
+      "max_candidates": 15,
+      "registered_candidates": 1
+    },
+    {
+      "id": 11,
+      "formation_id": 11,
+      "formateur": "Frank Wilson",
+      "start_date": "2023-08-01",
+      "end_date": "2023-08-31",
+      "max_candidates": 15,
+      "registered_candidates": 0
+    },
+    {
+      "id": 12,
+      "formation_id": 12,
+      "formateur": "Frank Wilson",
+      "start_date": "2023-08-01",
+      "end_date": "2023-08-31",
+      "max_candidates": 15,
+      "registered_candidates": 0
+    },
+    {
+      "id": 13,
+      "formation_id": 13,
+      "formateur": "Harry Johnson",
+      "start_date": "2023-10-01",
+      "end_date": "2023-10-31",
+      "max_candidates": 15,
+      "registered_candidates": 0
+    },
+    {
+      "id": 14,
+      "formation_id": 14,
+      "formateur": "Larry Smith",
+      "start_date": "2024-02-01",
+      "end_date": "2024-02-28",
+      "max_candidates": 15,
+      "registered_candidates": 0
+    },
+    {
+      "id": 15,
+      "formation_id": 15,
+      "formateur": "Harry Johnson",
+      "start_date": "2023-10-01",
+      "end_date": "2023-10-31",
+      "max_candidates": 15,
+      "registered_candidates": 0
+    },
+    {
+      "id": 16,
+      "formation_id": 16,
+      "formateur": "Harry Johnson",
+      "start_date": "2023-10-01",
+      "end_date": "2023-10-31",
+      "max_candidates": 15,
+      "registered_candidates": 0
+    },
+    {
+      "id": 17,
+      "formation_id": 17,
+      "formateur": "Jack Wilson",
+      "start_date": "2023-12-01",
+      "end_date": "2023-12-31",
+      "max_candidates": 15,
+      "registered_candidates": 0
+    },
+    {
+      "id": 18,
+      "formation_id": 18,
+      "formateur": "Jack Wilson",
+      "start_date": "2023-12-01",
+      "end_date": "2023-12-31",
+      "max_candidates": 15,
+      "registered_candidates": 0
+    },
+    {
+      "id": 19,
+      "formation_id": 19,
+      "formateur": "Jack Wilson",
+      "start_date": "2023-12-01",
+      "end_date": "2023-12-31",
+      "max_candidates": 15,
+      "registered_candidates": 0
+    },
+    {
+      "id": 20,
+      "formation_id": 20,
+      "formateur": "Larry Smith",
+      "start_date": "2024-02-01",
+      "end_date": "2024-02-28",
+      "max_candidates": 15,
+      "registered_candidates": 0
+    }
+  ]
+}

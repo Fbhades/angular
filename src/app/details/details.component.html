@@ -1,0 +1,21 @@
+<app-header></app-header>
+<div class="container" *ngIf="formation">
+    <h2>{{ formation.title }}</h2>
+    <img [src]="formation.image" alt="{{ formation.title }}" style="width: 100%">
+    <p class="price">{{ formation.price }}</p>
+    <p>{{ formation.description }}</p>
+    <p>Charge horaire: {{ formation.charge_horaire }} heures</p>
+    <p>Niveau de difficulté: {{ formation.niveau_difficulte }}</p>
+    <div *ngIf="sessions">
+      <div *ngFor="let session of sessions">
+        <p>{{ session.formateur }}</p>
+        <p>Dates: {{ session.start_date }} - {{ session.end_date }}</p>
+        <p>Registered Candidates: {{ session.registered_candidates }} / {{ session.max_candidates }}</p>
+        <button (click)="registerForSession(session)" [disabled]="session.registered_candidates >= session.max_candidates">
+          S'inscrire
+        </button>
+      </div>
+    </div>
+    <button (click)="downloadProgram()">Télécharger le programme (PDF)</button>
+  </div>
+  

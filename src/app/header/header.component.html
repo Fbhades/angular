@@ -1,0 +1,15 @@
+<nav *ngIf="isLoggedIn()">
+    <a routerLink="/Home">Accueil</a>
+    <a routerLink="/Formation">Formations</a>
+    <a *ngIf="!isadmin()" routerLink ="/candidat">Mes formations</a>
+    <a *ngIf="isadmin()" routerLink="/admin">admin</a>
+    <a (click)="logout()" href="">Logout</a>
+</nav>
+<nav *ngIf="!isLoggedIn()">
+    <a routerLink="/Home">Accueil</a>
+    <a routerLink="/Formation">Formations</a>
+    <a routerLink="/login">Espace Candidat</a>
+    <a routerLink="/login">Espace formateur</a>
+</nav>
+<router-outlet></router-outlet>
+

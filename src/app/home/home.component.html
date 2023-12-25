@@ -1,0 +1,24 @@
+<app-header></app-header>
+<div class="content-container">
+  <p>
+    Explore our diverse range of expert-led training programs designed to empower
+    individuals and businesses alike. From technology and business to creative arts
+    and personal development, our formations are meticulously curated to meet the
+    demands of a dynamic world. Easily navigate through our categorized offerings
+    to discover the ideal training that aligns with your goals.
+  </p>
+  <div class="card-container">
+    <div class="card" *ngFor="let category of categorizedFormations">
+      <h3>{{ category.category }}</h3>
+      <div class="card" *ngFor="let formation of category.formations">
+        <img [src]="formation.image" alt="{{ formation.title }}" style="width: 100%">
+        <h1>{{ formation.title }}</h1>
+        <p class="price">{{ formation.price }}</p>
+        <p>{{ formation.description }}</p>
+        <p>Charge horaire: {{ formation.charge_horaire }} heures</p>
+        <p>Niveau de difficulté: {{ formation.niveau_difficulte }}</p>
+        <p><button>Inscri</button></p>
+      </div>
+    </div>
+  </div>
+</div>

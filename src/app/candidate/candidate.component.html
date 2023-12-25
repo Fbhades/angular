@@ -1,0 +1,14 @@
+<app-header></app-header>
+<p>candidate works!</p>
+<div *ngFor="let formation of formations">
+    <h2>{{ formation.title }}</h2>
+    <img [src]="formation.image" alt="{{ formation.title }}" style="width: 100%">
+    <p class="price">{{ formation.price }}</p>
+    <p>{{ formation.description }}</p>
+    <p>Charge horaire: {{ formation.charge_horaire }} heures</p>
+    <p>Niveau de difficulté: {{ formation.niveau_difficulte }}</p>
+    <button *ngIf="isFormateur()" (click)="findCandidates(this.formation.id)">details</button>
+    <div *ngFor="let candidat of candidats">
+        <p>{{candidat.username}}</p>
+    </div>
+</div>
