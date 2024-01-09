@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { FormationService } from '../Service/formation.service';
-import { AuthService } from '../Service/service.service';
+import { Component} from '@angular/core';
+import { FormationService } from 'src/app/public/Service/formation.service';
+import { AuthService } from 'src/app/public/Service/service.service';
 import { forkJoin } from 'rxjs';
 
 @Component({

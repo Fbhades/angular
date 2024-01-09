@@ -8,7 +8,6 @@ import { catchError, map } from 'rxjs/operators';
 })
 export class AuthService {
   
-  private apiUrl ='../assets/users.json';
   private user="http://localhost:3000/users";
 
   users:any[]=[];
@@ -16,10 +15,10 @@ export class AuthService {
   constructor(private http: HttpClient) {}
 
   login(username: string, password: string): Observable<boolean> {
-    return this.http.get<any>(this.apiUrl).pipe(
+    return this.http.get<any>(this.user).pipe(
       map((data) => {
-        this.users = data.users;
-        const user = data.users.find((u: any) => u.username === username && u.password === password);
+        this.users = data;
+        const user = data.find((u: any) => u.username === username && u.password === password);
 
         if (user) {
           window.localStorage.setItem('accessToken', user.accessToken);

@@ -26,25 +26,11 @@
       "role": "admin"
     },
     {
-      "username": "",
-      "password": "",
-      "role": "candidat",
+      "username": "hanen",
+      "password": "hanen",
+      "role": "formateur",
       "formations": [],
       "id": 4
-    },
-    {
-      "username": "",
-      "password": "",
-      "role": "candidat",
-      "formations": [],
-      "id": 5
-    },
-    {
-      "username": "",
-      "password": "",
-      "role": "candidat",
-      "formations": [],
-      "id": 6
     }
   ],
   "formations": [

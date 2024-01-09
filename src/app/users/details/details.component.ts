@@ -1,9 +1,9 @@
 import { Component, OnInit,ViewChild, ElementRef } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { FormationService } from '../Service/formation.service';
-import { AuthService } from '../Service/service.service';
+import { FormationService } from 'src/app/public/Service/formation.service';
+import { AuthService } from 'src/app/public/Service/service.service';
 import { Router } from '@angular/router';
-import { SessionService } from '../Service/session.service';
+import { SessionService } from 'src/app/public/Service/session.service';
 
 
 @Component({
